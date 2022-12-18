@@ -207,7 +207,7 @@ line-height: 1.18;
 letter-spacing: 0.04em;
 color:var(--color-light);
 background: #404BBF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
  .btn-orderservice:hover,
@@ -215,6 +215,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 {
     background-color:var(--color-btn);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn
@@ -229,7 +230,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background: var(--color-grey);
     color: var(--color-btn);  
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);     
+       
 }
 
 .btn:hover,
@@ -238,7 +239,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--color-btn);
     color: var(--color-light);
     cursor: pointer;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+   
+    box-shadow: 0px 2px 0px rgba(4, 4, 22, 0.08);
 }
 
 .btn-item 
@@ -264,19 +266,20 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.02em;
     color: var(--color-light);
 }
-    .effective 
+    .effective
     {
-        background: var(--color-text); 
+     
         text-align: center;
         padding-top: 192px;
         padding-bottom: 192px;
-        max-width: 1440px;
-
        background-image:linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
      url(../images/effective-img\ .jpeg);
        background-size: cover;
        background-position: center;
        background-repeat: no-repeat;
+       max-width: 1440px;
+       margin: 0 auto;
+
     }
 
    
@@ -290,7 +293,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     .team-item 
 {
-    flex-basis: calc((100% - 72px) /4 );
+    flex-basis: calc((100% - 72px) /4);
     background-color:var(--color-light);
     text-align: center;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -347,14 +350,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 .social-list 
 {
-    display: inline-flex;
+    display: flex;
     justify-content:center;
-    margin: 0 auto;
-    margin-top: 8px;
-    margin-left: 16px;
-    margin-right: 16px;
-    column-gap: 24px;
-    padding: 4px 0;
+    margin-top: 12px;
+    padding-left: 0;
+    column-gap: 24px; 
 }
 
 .social-item 
@@ -421,16 +421,13 @@ fill: currentColor;
     margin: auto;
     padding: 0;
     row-gap: 48px;
-    column-gap: 24px;
-   
+    column-gap: 24px; 
 }
 
 .gallery-item
 {
     width: calc((100% - 48px) /3 );
 }
-
-
 
 .gallery
 {
@@ -442,13 +439,16 @@ fill: currentColor;
 {  
     display: block;
     text-decoration: none;
-    border: 0.5px solid var(--color-grey);
+    box-shadow: 0px 1px 8px rgba(46, 47, 66, 0.08);
+   
 }
-.gallery-item:hover,
-.gallery-item:focus
+.gallery-link:hover,
+.gallery-link:focus
 {
     background:var(--color-light);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -480,7 +480,7 @@ fill: currentColor;
 {
     padding-top: 131px;
     padding-bottom: 109px;
-    background-color: var(--color-backround);
+    background-color: var(--color-light);
 }
 
 .container {
@@ -519,23 +519,25 @@ color: #2E2F42;
 }
 .clients-link 
 {
-    width: 168px;
+    
+    width: 100%;
     height: 88px;
     padding: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--color-light);
-    border-radius: 24px;
     color: var(--color-icon-grey);
     border: 1px solid #8E8F99;
-   border-radius: 4px;
+    border-radius: 4px;
     
 }
 
 .clients-link:hover
 {
     color: var(--color-btn);
+    border-color: var(--color-btn);
 }
 .svg-client-icon 
 
@@ -552,6 +554,9 @@ fill:currentColor;
     background: var(--color-text);
     padding-bottom: 100px;
     padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .link-webstudio-footer
@@ -595,9 +600,7 @@ fill:currentColor;
 {
     width: 208px;
     height: 80px;
-    margin-left: 120px;
-    margin-right: 692px;
-    
+    margin-left: 120px;   
 }
 
 .web-footer-box
@@ -612,14 +615,16 @@ fill:currentColor;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-light);
-    margin-bottom: 16px;
+    
   
 }
 .media-footer-list 
 {
     display: flex;
+    width: 100%;
     column-gap: 16px;
     padding-left: 0;
+    margin-top: 16px;
     
 }
 
