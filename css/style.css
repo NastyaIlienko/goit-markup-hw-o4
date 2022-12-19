@@ -85,12 +85,12 @@ h1,h2,h3,h4,h5,h6,p,ul
 .text-list,
 .portfolio-list
 {
-    display: flex;
-    
+    display: flex; 
 }
 
 
-body {
+body 
+{
     font-family: "Roboto", sans-serif;
     background-color: var(--color-light);
 }
@@ -98,20 +98,18 @@ body {
 /* header css 2 pages */
 
 .link-webstudio
- { 
+{ 
     padding-top: 24px;
     padding-bottom: 24px;
-    
 
-font-family: "Raleway", sans-serif;
-font-weight: 800;
-font-size: 18px;
-line-height:1.13;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color:var(--color-text);
-text-decoration: none;
-
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height:1.13;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--color-text);
+    text-decoration: none; 
 }
 
 .link-webstudio span {
@@ -137,7 +135,6 @@ text-decoration: none;
  .item 
 {
     flex-basis:  calc((100% - 72px) / 4);
-
 }
 
 .header-link
@@ -147,18 +144,15 @@ text-decoration: none;
     justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
-   
-    
 
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--color-contacts);
-text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-contacts);
+  text-decoration: none;
 
 }
-
 
 .header-link:hover,
 .header-link:focus 
@@ -230,6 +224,7 @@ background: #404BBF;
     border-radius: 4px;
     background: var(--color-grey);
     color: var(--color-btn);  
+    cursor: pointer;
        
 }
 
@@ -238,8 +233,6 @@ background: #404BBF;
  {
     background-color: var(--color-btn);
     color: var(--color-light);
-    cursor: pointer;
-   
     box-shadow: 0px 2px 0px rgba(4, 4, 22, 0.08);
 }
 
@@ -357,11 +350,6 @@ background: #404BBF;
     column-gap: 24px; 
 }
 
-.social-item 
-{
-    width: calc((100% - 72px) /4 );
-}
-
 .social-link
 {
     width: 40px;
@@ -373,6 +361,7 @@ background: #404BBF;
     justify-content: space-around;
     background-color: #4D5AE5 ;
     color: var(--color-grey);
+    
 }
 
 .svg-icon 
@@ -439,8 +428,7 @@ fill: currentColor;
 {  
     display: block;
     text-decoration: none;
-    box-shadow: 0px 1px 8px rgba(46, 47, 66, 0.08);
-   
+    box-shadow: 0px 1px 8px rgba(46, 47, 66, 0.08); 
 }
 .gallery-link:hover,
 .gallery-link:focus
@@ -490,13 +478,12 @@ fill: currentColor;
     margin-bottom: 72px;
     text-align: center;
 
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #2E2F42;
-
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 42px;
+ text-align: center;
+ letter-spacing: 0.03em;
+ color: #2E2F42;
 
 }
 .client-list 
@@ -507,9 +494,6 @@ color: #2E2F42;
     align-items: center;
     justify-content: center;
     column-gap: 24px;
-    
-    
-   
 }
 .list {
 }
@@ -534,7 +518,8 @@ color: #2E2F42;
     
 }
 
-.clients-link:hover
+.clients-link:hover,
+.clients-link:focus
 {
     color: var(--color-btn);
     border-color: var(--color-btn);
@@ -555,8 +540,7 @@ fill:currentColor;
     padding-bottom: 100px;
     padding-top: 100px;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;  
 }
 
 .link-webstudio-footer
@@ -592,8 +576,7 @@ fill:currentColor;
 
 .box-footer 
 {
-    display: flex;
-   
+    display: flex; 
 }
 
 .media-box
@@ -603,11 +586,6 @@ fill:currentColor;
     margin-left: 120px;   
 }
 
-.web-footer-box
-{
-    
-    
-}
 .tittle-media-footer 
 {
     font-weight: 600;
@@ -615,8 +593,6 @@ fill:currentColor;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-light);
-    
-  
 }
 .media-footer-list 
 {
@@ -633,22 +609,23 @@ fill:currentColor;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:calc((100% - 48px) /4 );
-   
 }
 .media-footer-link 
 {
+    width: 40px;
+    height: 40px;
+
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     color:var(--color-grey);
-    width: 40px;
-    height: 40px;
+    cursor: pointer;
 }
 
-.media-footer-link:hover
+.media-footer-link:hover,
+.media-footer-link:focus
 {
     background-color: #31D0AA;;
 }
